@@ -1,79 +1,154 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<!--Primeira atividade Relative Layout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:gravity="center_horizontal"
-    tools:context=".MainActivity">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
 
-
-
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/relativeLayout_two"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:orientation="horizontal"
-        android:background="@color/black"
-        >
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
 
         <ImageView
             android:src="@drawable/person_add_fill0_wght400_grad0_opsz24"
             android:layout_width="50dp"
             android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
             app:tint="@color/gray"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="150dp"
+
+
             />
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="80dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginRight="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
             android:src="@drawable/person_remove_fill0_wght400_grad0_opsz24"
             app:tint="@color/gray" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Olá cidadão!"
-        android:textAlignment="center"
-        android:fontFamily="sans-serif-condensed-medium"
         android:textSize="20sp"
-        android:layout_marginTop="50dp"
-        />
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        >
+    </TextView>
 
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="Insira seu nome"
-        android:layout_marginTop="200dp"
-        android:paddingHorizontal="10dp"
-        android:layout_marginHorizontal="15dp"
-        />
-
-
-        <Button
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:text="Adicionar"
-            android:backgroundTint="@color/black"
-            android:layout_marginTop="200dp"
+        <EditText
+            android:id="@+id/editText_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Insira seu nome"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="15dp"
             />
 
 
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Adicionar"
+                android:backgroundTint="@color/black"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                />
 
 
-</LinearLayout>
 
-<!--//aula 6-->
+
+</RelativeLayout>
+
+
+<!--Segunda atividade Linear Layout-->
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="vertical"-->
+<!--    android:gravity="center_horizontal"-->
+<!--    tools:context=".MainActivity">-->
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@color/black"-->
+<!--        >-->
+
+<!--        <ImageView-->
+<!--            android:src="@drawable/person_add_fill0_wght400_grad0_opsz24"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            app:tint="@color/gray"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginRight="150dp"-->
+<!--            />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_marginLeft="100dp"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:src="@drawable/person_remove_fill0_wght400_grad0_opsz24"-->
+<!--            app:tint="@color/gray" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Olá cidadão!"-->
+<!--        android:textAlignment="center"-->
+<!--        android:fontFamily="sans-serif-condensed-medium"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        />-->
+
+
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:inputType="text"-->
+<!--        android:hint="Insira seu nome"-->
+<!--        android:layout_marginTop="200dp"-->
+<!--        android:paddingHorizontal="10dp"-->
+<!--        android:layout_marginHorizontal="15dp"-->
+<!--        />-->
+
+
+<!--        <Button-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Adicionar"-->
+<!--            android:backgroundTint="@color/black"-->
+<!--            android:layout_marginTop="200dp"-->
+<!--            />-->
+
+
+
+
+<!--</LinearLayout>-->
+
+<!--//aula 6 : Primeira atividade-->
 <!--<?xml version="1.0" encoding="utf-8"?>-->
 <!--<LinearLayout-->
 <!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
