@@ -1,65 +1,128 @@
-<!--COntraint Layout-->
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button_a"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="Botão 1"
-        style="?android:attr/borderlessButtonStyle"
-        android:background="@color/black"
-        />
-
-    <Button
-        android:id="@+id/button_b"
+        android:id="@+id/button_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/button_a"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:text="Botão 2"
-        style="?android:attr/borderlessButtonStyle"
-        android:background="@color/black"
-        />
-
-    <Button
-        android:id="@+id/button_c"
-        android:layout_width="150dp"
-        android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/button_a"
+        android:text="@string/button_save"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_b"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="Botão 3"
-        style="?android:attr/borderlessButtonStyle"
-        android:background="@color/black"
-        />
-
-
-    <Button
-        android:id="@+id/button_d"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="Botão 4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
-        style="?android:attr/borderlessButtonStyle"
-        android:background="@color/black"
-
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/purple_200"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--COntraint Layout-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button_save"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        android:text="@string/button_save"-->
+<!--        android:backgroundTint="@color/purple_200"-->
+<!--        />-->
+
+<!--    &lt;!&ndash;    <Button&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/button_calculate"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintLeft_toLeftOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintRight_toRightOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:text="Botao Save"&ndash;&gt;-->
+<!--&lt;!&ndash;        style="?android:attr/borderlessButtonStyle"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:background="@color/black"&ndash;&gt;-->
+
+<!--&lt;!&ndash;        />&ndash;&gt;-->
+
+
+
+
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+    <!--&lt;!&ndash;COntraint Layout&ndash;&gt;-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button_save"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        android:text="Botao Save"-->
+<!--        style="?android:attr/borderlessButtonStyle"-->
+<!--        android:background="@color/black"-->
+
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button_b"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/button_save"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        android:text="Botão 2"-->
+<!--        style="?android:attr/borderlessButtonStyle"-->
+<!--        android:background="@color/black"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button_c"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/button_save"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/button_b"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:text="Botão 3"-->
+<!--        style="?android:attr/borderlessButtonStyle"-->
+<!--        android:background="@color/black"-->
+<!--        />-->
+
+
+<!--    <Button-->
+<!--        android:id="@+id/button_d"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Botão 4"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.3"-->
+<!--        style="?android:attr/borderlessButtonStyle"-->
+<!--        android:background="@color/black"-->
+
+<!--        />-->
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
 
 
     <!--&lt;!&ndash;Primeira atividade Relative Layout&ndash;&gt;-->
